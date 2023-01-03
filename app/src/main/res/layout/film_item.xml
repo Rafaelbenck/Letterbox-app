@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_view_bg"
+    android:layout_marginBottom="15dp">
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="5dp">
+
+
+    <TextView
+        android:id="@+id/txt_nome"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+
+        android:textSize="20sp"
+        android:layout_marginBottom="5dp"
+        tools:text="Star Wars" />
+
+    <TextView
+        android:id="@+id/txt_sinopse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_nome"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="5dp"
+        android:ellipsize="end"
+        android:maxHeight="50dp"
+        android:textSize="16sp"
+        tools:text="Era uma casa muito engraçada Era uma casa muito engraçada Era uma casa muito engraçada  Era uma casa muito engraçada Era uma casa muito engraçada Era uma casa muito engraçada Era uma casa muito engraçada Era uma casa muito engraçada  " />
+
+
+    <TextView
+        android:id="@+id/txt_nota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_sinopse"
+        android:layout_marginStart="22dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:textColor="#0277BD"
+        android:textSize="14sp"
+        tools:text="8.5" />
+
+
+
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView >
